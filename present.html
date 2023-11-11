@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="images/logo3.png">
+    <title>Future of AI</title>
+    <link rel="stylesheet" href="style-present.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro&family=Rubik&display=swap" rel="stylesheet">
+</head>
+<body> 
+        <!-- bar styling -->
+        <div id="progressbar"></div>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script type="text/javascript">
+            $(window).scroll(function(){
+                var scroll = $(window).scrollTop(),
+                dh = $(document).height()
+                wh = $(window).height()
+                scrollPrecent = (scroll / (dh-wh))* 100;
+                $('#progressbar').css('height', scrollPrecent + '%');
+            })
+        </script>
+
+    <div class="hero">
+        <video autoplay loop muted plays-inline class="background">
+            <source src="videos/video2.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- Start Nav Bar -->
+
+    <div class="container">
+        <div class="navbar">
+            <img src="images/logo3.png" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="arabic.html">Arabic</a></li>
+                </ul>
+            </nav>
+            <!-- <img src="images/menu.png" class="menu-icon"> -->
+        </div>
+
+        <!-- End Nav Bar -->
+        <div class="content">
+            <div class="article">
+                <h1>Navigating the AI Landscape</h1>
+                <p>In the ever-evolving realm of artificial intelligence (AI), the AI Now Institute stands as a beacon of critical inquiry and responsible innovation. Founded in 2017, this interdisciplinary research institute delves into the social implications of AI, fostering a comprehensive understanding of its potential benefits and challenges.</p>
+            </div>
+            <h1>Unveiling the Social Fabric of AI</h1>
+            <div class="article-video">
+                
+                <p>The AI Now Institute's mission is deeply rooted in examining the societal impact of AI. Its team of researchers, representing diverse fields such as computer science, ethics, law, and social sciences, embarks on a meticulous exploration of AI's influence on our lives.</p>
+                <video autoplay loop plays-inline muted src="videos/video3.mp4" width="550" height="550" class="video1">
+            </div>
+            <div class="article">
+                <h1>Disseminating Knowledge and Shaping Public Discourse</h1>
+                <p>The AI Now Institute's commitment to public understanding is evident in its annual report, "The State of AI." This comprehensive report provides an in-depth overview of AI advancements, challenges, and societal implications, serving as a valuable resource for policymakers, researchers, and the broader public.
+                    The institute also actively engages in public discourse, organizing events, workshops, and conferences that bring together experts, stakeholders, and the public to discuss AI's ethical dimensions and inform responsible innovation.</p>
+            </div>
+            <div class="article-end">
+                <h1>How does AI work?</h1>
+                <p>AI works by combining large amounts of data with intelligent algorithms — series of instructions — that allow the software to learn from patterns and features of the data.</p>
+            </div>
+        </div>
+    </div>
+</html

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="images/logo3.png">
+    <title>Future of AI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro&family=Rubik&display=swap" rel="stylesheet">
+</head>
+<body> 
+
+    <!-- bar styling -->
+    <div id="progressbar"></div>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+        $(window).scroll(function(){
+            var scroll = $(window).scrollTop(),
+            dh = $(document).height()
+            wh = $(window).height()
+            scrollPrecent = (scroll / (dh-wh))* 100;
+            $('#progressbar').css('height', scrollPrecent + '%');
+        })
+    </script>
+
+    <audio loop autoplay>
+        <source src="images/Glamyan.mp3">
+    </audio>
+    <div class="hero">
+        <video autoplay loop muted plays-inline class="background">
+            <source src="videos/video2.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="container">
+        <div class="navbar">
+            <img src="images/logo3.png" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="arabic.html">Arabic</a></li>
+                </ul>
+            </nav>
+            <!-- <img src="images/menu.png" class="menu-icon"> -->
+        </div>
+        <div class="row">
+            <div class="col">
+                <h1>Artificial Intelligence</h1>
+                <p>
+                    Artificial intelligence (AI) is a modern technological revolution that is impacting all aspects of our lives. By developing machines that can think, learn, and act independently, AI has the potential to solve many of the problems and challenges we face today.
+                </p>
+            </div>
+            <div class="col">
+                <div class="card card1" onclick="location='pre-AI.html'">
+                    <h5>The pre-AI era</h5>
+                    <p class="card_p">The evolution of artificial intelligence from its early beginnings to the present day</p>
+                </div>
+                <div class="card card2" onclick="location='present.html'">
+                    <h5>AI in the present day</h5>
+                    <p class="card_p">The current state of artificial intelligence and how it can be used to our advantage</p>
+                </div>
+                <div class="card card3">
+                    <h5>The future of AI</h5>
+                    <p class="card_p">The future of AI and What could artificial intelligence be in the future?</p>
+                </div>
+                <div class="card card4">
+                    <h5>Artificial intelligence websites</h5>
+                    <p class="card_p">Examples of the use of artificial intelligence and how to employ it for your specific needs</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
